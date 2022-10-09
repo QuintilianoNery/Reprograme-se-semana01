@@ -1,0 +1,31 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#about {
+  background-color: #faac58;
+
+}
+
+#index {
+  background-color: #58FA82;
+
+}
+
+#img {
+  background-color: #fad158;
+
+}
+
+#picture_page {
+  background-color: #1f6b8b;
+}
+
+#midia {
+  background-color: #106c1f;
+}
+
+#audio {
+  background-color: #1d7c9f;
+}
