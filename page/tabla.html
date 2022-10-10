@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<div id="Tabela">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../css/style.css" rel="stylesheet">
+        <title>Tabelas</title>
+        <h2>Tabelas</h2>
+    </head>
+
+    <body>
+        <h1>Tabela</h1>
+        <hr>teste com Tabela</p>
+
+        <!-- LInhas tr -->
+        <!-- Colunas/colunas td -->
+        <!-- Titulo da tabela th -->
+        <table  width="60%" cellpadding="5" cellspacing="5" border="1" align="center" bgcolor="silver" frame="box" rules="all">
+            <caption>Título da tabela</caption>
+            <!-- Agrupar cabeçalho thead -->
+            <thead>
+                <tr>
+                    <!-- Célula se expandindo em coluna horizontalmente colspan -->
+                    <th colspan="2">Nome completo</th>
+                    <!-- Célula se expandindo em linhas verticalmente com rowspan-->
+                    <th rowspan="2" width="25%">Idade</th>
+                </tr>
+                <tr>
+                    <th align="left">Nome</th>
+                    <th align="left">Sobrenome</th>
+                </tr>
+            </thead>
+            <!-- Agrupar corpo tbody-->
+            <tbody>
+                <tr>
+                    <td>Célula 2,1</td>
+                    <td>Célula 2,2</td>
+                    <td align="center">Célula 2,3</td>
+                </tr>
+                <tr>
+                    <td>Célula 3,1</td>
+                    <td>Célula 3,2</td>
+                    <td align="center">Célula 3,3</td>
+                </tr>
+            </tbody>
+            <!-- Agrupar rodapé tfoot-->
+            <tfoot>
+                <tr>
+                    <td>Célula 4,1</td>
+                    <td>Célula 4,2</td>
+                    <td align="center">Célula 4,3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </body>
+</div>
+
+</html>
