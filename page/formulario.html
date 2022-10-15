@@ -13,7 +13,7 @@
     <body>
         <h1>Formulário</h1>
         <hr>
-        <form method="post">
+        <form method="get">
             <fieldset>
                 <legend>Informações pessoais</legend>
                 <label for="txtNomeCompleto">Nome completo</label><br>
@@ -44,10 +44,34 @@
                 </select>
             </p>
             <p>
+                <label for="sltLinguagens">Linguagens de programação</label><br>
+                <select name="Linguagens" id="sltLinguagens" size="4" multiple=>
+                    <option value="html">HTML</option>
+                    <option value="JS">Java Script</option>
+                    <option value=".net">.net</option>
+                    <option value="C#">c#</option>
+                </select>
+            </p>
+            <p>
+                <label for="txtCidade">Cidade</label><br>
+                <input type="text" name="Cidade" id="txtCidade" list="cidades">
+                <datalist id="cidades">
+                    <option value="Cariacica">
+                    <option value="Castelo">
+                    <option value="Cachoeiro de itapemirim">
+                    <option value="Miqui">
+                </datalist>
+            </p>
+            <p>
+                <label for="txtCurriculo">Currículo</label><br>
+                <textarea name="Curriculo" id="txtCurriculo" cols="30" rows="10"></textarea>
+            </p>
+            <p>
                 <input type="checkbox" name="Aceito" id="chkAceito">
                 <label for="chkAceito">Aceito os termos</label>
             </p>
-            <input type="submit" value="Enviar" name="btnEnviar" id="enviar">
+            <input type="submit" value="Enviar" name="btnEnviar" id="btnEnviar">
+            <input type="reset" value="Limpar Formulário" name="btnLimparFormulario" id="btnLimparFormulario">
         </form>
     </body>
 </div>
