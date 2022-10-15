@@ -13,14 +13,41 @@
     <body>
         <h1>Formulário</h1>
         <hr>
-        <form>
-            <div>
-                <label for="txtNomeCompleto">Nome completo:</label><br>
-                <input type="text" name="NomeCompleto" id="txtNomeCompleto"><br>
-            </div>
-            <div>
+        <form method="post">
+            <fieldset>
+                <legend>Informações pessoais</legend>
+                <label for="txtNomeCompleto">Nome completo</label><br>
+                <input type="text" name="NomeCompleto" id="txtNomeCompleto" placeholder="Digite seu nome completo"><br>
+                <label for="txtEmail">Email</label><br>
+                <input type="text" name="Email" id="txtEmail" placeholder="seuemail@servidor.com"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Cargo</legend>
+                <input type="radio" name="Cargo" id="rdProgramador" value="dev">
+                <label for="rdProgramador">Programador</label><br>
 
-            </div>
+                <input type="radio" name="Cargo" id="rdQualityAssurance" value="qa">
+                <label for="rdQualityAssurance">Quality Assurance</label><br>
+
+                <input type="radio" name="Cargo" id="rdUX" value="ux">
+                <label for="rdUX">UX</label><br>
+            </fieldset>
+            <p>
+                <label for="slctEstado">Estado</label><br>
+                <select name="Estado" id="slctEstado">
+                    <optgroup label="Sudeste">
+                        <option value="ES">Espírito Santo</option>
+                        <option value="SP" selected>São Paulo</option>
+                        <option value="RJ">Rio de Janmeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" name="Aceito" id="chkAceito">
+                <label for="chkAceito">Aceito os termos</label>
+            </p>
+            <input type="submit" value="Enviar" name="btnEnviar" id="enviar">
         </form>
     </body>
 </div>
